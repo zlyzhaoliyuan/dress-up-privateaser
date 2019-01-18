@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html>
+  <body bgcolor="5CBEC4">
   <head>
     <title>CSS/HTML Workshop with Privateaser</title>
   </head>
   <body>
-    <div id="bar">
-      <input class="js-name" type="text" placeholder="Bar name"/>
-      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
-      <input class="js-price-by-person" type="number" placeholder="Price by person"/>
+    <div id="header" style="background-color:#285666;">
+    <h1 style="margin-bottom:0;">COMPUTE PRICE</h1></div>
+
+    <div id="content" style="background-color:#EEEEEE;">
+      <div id="bar">
+        <h2>Information of Bar</h2>
+        <input class="js-name" type="text" placeholder="Bar name"/>
+        <br/>
+        <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
+        <br/>
+        <input class="js-price-by-person" type="number" placeholder="Price by person"/>
+      </div>
+      <hr />
+      <div id="booker">
+        <h2>Information of booking</h2>
+        <input class="js-name" type="text" placeholder="Booker name"/>
+        <br/>
+        <input class="js-time" type="number" placeholder="Time in h"/>
+        <br/>
+        <input class="js-persons" type="number" placeholder="Persons"/>
+        <br/>
+        <input class="js-option" type="checkbox" placeholder="Deductible option"/>
+        deductibleReduction 1€/person
+      </div>
+      <button id="compute">Compute</button>
+      <div id="actors"></div>
     </div>
-    <div id="booker">
-      <input class="js-name" type="text" placeholder="Booker name"/>
-      <input class="js-time" type="number" placeholder="Time in h"/>
-      <input class="js-persons" type="number" placeholder="Persons"/>
-      <input class="js-option" type="checkbox" placeholder="Deductible option"/>
+    <br>
+    <div id="TIPS" style="background-color:#CBD7E8;">
+      <b>TIPS</b><br>
+      decreases by 10% after 10 persons<br>
+      decreases by 30% after 20 persons<br>
+      decreases by 50% after 60 persons
     </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
+    <br>
+    <div id="footer" style="background-color:#285666;clear:both;text-align:center;">© ZHAOLIYUAN</div>
     <script src="privateaser.js"></script>
     <script src="index.js"></script>
   </body>
